@@ -1,7 +1,6 @@
 const functions = require("firebase-functions");
 
-// exports.deleteImage = functions.pubsub.schedule("0 24 * * *")
-exports.deleteImage = functions.pubsub.schedule("0 0 2 * *")
+exports.deleteImage = functions.pubsub.schedule("0 24 * * *")
     .onRun(() =>{
       console.log("run");
       const currentDate = new Date();
